@@ -90,10 +90,12 @@
             }
 
             if (array) {
-                if (traditional)
-                    name = parentString;
-                else
-                    name = parentString + "[" + name + "]";
+//                 if (traditional)
+//                     name = parentString;
+//                 else
+//                     name = parentString + "[" + name + "]";
+                //Refactoring
+                (traditional) ? name = parentString : name = parentString + "[" + name + "]";
             } else {
                 name = parentString + "[" + name + "]";
             }
